@@ -1,0 +1,12 @@
+import React from 'react';
+export const FAQ = () => {
+  const faqs = [{q: "How long does the battery last?", a: "Up to 12 hours."},{q: "Can it be used outdoors?", a: "Yes, it is IP-rated."}];
+  return (
+    <div className="pt-32 pb-20 bg-white min-h-screen">
+      <div className="max-w-4xl mx-auto px-6">
+        <h1 className="text-5xl font-serif mb-12">FAQ</h1>
+        {faqs.map((f, i) => <div key={i} className="mb-8"><h3 className="font-bold">{f.q}</h3><p>{f.a}</p></div>)}
+      </div>
+    </div>
+  );
+};

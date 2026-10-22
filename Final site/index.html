@@ -1,0 +1,27 @@
+/**
+ * @description The Home Page for Lumina.
+ * Integrates all primary sections of the website.
+ */
+
+import React from 'react';
+import { Navbar } from '../components/Layout';
+import { Footer } from '../components/Layout';
+import { Hero } from '../components/Hero';
+import { ProductFeatures } from '../components/ProductFeatures';
+
+const Home = () => {
+  return (
+    <div className="bg-white selection:bg-stone-200">
+      <Navbar />
+      <main>
+        <Hero />
+        <div className="bg-white">
+          <ProductFeatures />
+        </div>
+      </main>
+      <Footer />
+    </div>
+  );
+};
+
+export default Home;
